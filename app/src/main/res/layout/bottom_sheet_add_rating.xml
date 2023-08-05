@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:paddingHorizontal="10dp"
+    android:paddingVertical="20dp"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/dark_purple_grey"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="100dp"
+        android:layout_height="5dp"/>
+
+    <RatingBar
+        android:id="@+id/ratingBarMovie"
+        android:layout_marginTop="30dp"
+        android:numStars="10"
+        android:isIndicator="false"
+        style="@style/Widget.AppCompat.RatingBar.Indicator"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnDeleteRating"
+            app:cornerRadius="10dp"
+            android:text="@string/hapus_rating"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="13sp"
+            app:backgroundTint="@color/red"
+            app:rippleColor="@color/white"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSubmitRating"
+            app:cornerRadius="10dp"
+            android:layout_marginStart="10dp"
+            android:text="@string/submit_rating"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="13sp"
+            app:backgroundTint="@color/dark_purple_grey"
+            app:rippleColor="@color/white"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</LinearLayout>

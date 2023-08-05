@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.DetailMovieActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarMovie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:navigationIcon="@drawable/baseline_arrow_back_24"
+        app:titleTextAppearance="@style/custom_text_toolbar" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nested"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgBackdrop"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/imgPoster"
+                android:layout_width="120dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="-80dp"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/poppins_medium"
+                android:maxLines="3"
+                android:text="@string/title_movie"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvGenres"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/genres"
+                android:textAlignment="center"
+                android:textSize="13sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnTrailer"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:cornerRadius="10dp"
+                app:rippleColor="@color/grey"
+                android:text="@string/trailer"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="15sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tvTagline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/tagline"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tvOverview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="5dp"
+                android:maxLines="5"
+                android:ellipsize="end"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/overview"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:paddingHorizontal="20dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnAddTo"
+                    app:backgroundTint="@color/white"
+                    app:strokeWidth="1dp"
+                    app:icon="@drawable/baseline_favorite_24"
+                    app:iconTint="@color/red"
+                    app:strokeColor="@color/red"
+                    android:textColor="@color/red"
+                    app:rippleColor="@color/red"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="@string/favorite"
+                    app:cornerRadius="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnAddRating"
+                    android:layout_marginStart="20dp"
+                    app:backgroundTint="@color/white"
+                    app:strokeWidth="1dp"
+                    app:icon="@drawable/baseline_star_24"
+                    app:iconTint="@color/dark_purple_grey"
+                    app:strokeColor="@color/dark_purple_grey"
+                    android:textColor="@color/dark_purple_grey"
+                    app:rippleColor="@color/dark_purple_grey"
+                    android:fontFamily="@font/poppins_medium"
+                    app:cornerRadius="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

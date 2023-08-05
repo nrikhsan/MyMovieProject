@@ -1,0 +1,27 @@
+package com.jisoo.mymovie.utils
+
+object Constants {
+    const val API_KEY = "2466033f05f44aedeef9346ff0ba38e9"
+    const val BASE_URL = "https://api.themoviedb.org/3/"
+    const val URL_IMAGE_PROFILE = "https://image.tmdb.org/t/p/w185/xy44UvpbTgzs9kWmp4C3fEaCl5h.png"
+    const val URL_IMAGE_POSTER = "https://image.tmdb.org/t/p/w300/"
+    const val URL_IMAGE_BACKDROP = "https://image.tmdb.org/t/p/w1280/"
+    const val URL_TMDB_MOVIE = "https://www.themoviedb.org/"
+    const val DETAIL_MOVIE = "movie/{movie_id}"
+    const val DISCOVER = "discover/movie"
+    const val ACCOUNT_DETAIL = "account/{account_id}"
+    const val REQUEST_TOKEN = "authentication/token/new"
+    const val GUEST_SESSION = "authentication/guest_session/new"
+    const val VALIDATE_WITH_LOGIN = "authentication/token/validate_with_login"
+    const val CREATE_SESSION = "authentication/session/new"
+    const val ADD_RATING = "movie/{movie_id}/rating"
+    const val DELETE_RATING = "movie/{movie_id}/rating"
+    const val DETAIL_PERSONAL_LIST = "list/{list_id}"
+    const val DELETE_LIST = "list/{list_id}"
+    const val RATED_MOVIES_BY_SESSION_ID = "account/{account_id}/rated/movies"
+    const val RATED_MOVIES_BY_GUEST = "guest_session/{guest_session_id}/rated/movies"
+    const val CREATE_LIST = "list"
+    const val PERSONAL_LIST = "account/{account_id}/lists"
+    const val SEARCH_MOVIE_FOR_ADD_TO_PERSONAL_LIST = "search/movie"
+    const val ADD_MOVIE_TO_PERSONAL_LIST = "list/{list_id}/add_item"
+}

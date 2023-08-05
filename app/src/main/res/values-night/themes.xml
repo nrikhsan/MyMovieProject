@@ -1,0 +1,9 @@
+<resources>
+
+    <style name="Base.Theme.MyMovie" parent="Theme.Material3.Light.NoActionBar">
+
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+
+    </style>
+</resources>
